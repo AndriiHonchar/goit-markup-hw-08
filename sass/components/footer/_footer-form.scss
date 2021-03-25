@@ -1,0 +1,122 @@
+.footer-form__container {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-form__text {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $color-white;
+  margin-bottom: 20px;
+}
+
+.footer-form__field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-form__input {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $color-white;
+
+  margin-bottom: 20px;
+
+  background-color: initial;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+
+  height: 50px;
+  padding-left: 16px;
+  width: calc(100vw - 30px);
+
+  transition: border-color 250ms $cubic;
+
+  &:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form__button {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $color-white;
+  background: $link-blue;
+  border: none;
+  border-radius: 4px;
+
+  padding: 10px 28px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms $cubic, color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $color-white;
+    color: $link-blue;
+  }
+}
+
+.footer-form__icon {
+  fill: $color-white;
+  margin-left: 10px;
+
+  transition: fill 250ms $cubic;
+}
+
+.footer-form__button:hover .footer-form__icon,
+.footer-form__button:focus .footer-form__icon {
+  fill: $link-blue;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__container {
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 93px;
+    width: 100%;
+  }
+
+  .footer-form__field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-form__input {
+    margin: 0 12px 0 0;
+    width: 358px;
+  }
+}
