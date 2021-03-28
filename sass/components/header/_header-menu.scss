@@ -1,0 +1,16 @@
+.header-menu {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-white;
+  padding: 48px 40px;
+
+  transform: translateX(100%);
+}
+
+.header-menu.is-open {
+  transform: translateX(0);
+}

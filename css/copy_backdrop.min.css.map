@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,AAAC,CACR,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,gBAAgB,CAAE,eAAkB,CAEpC,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,OAAO,CAAC,KAAK,CAAC,YAAY,CAMvC,AAJE,AAAD,oBAAY,AAAC,CACX,OAAO,CAAE,CAAC,CACV,cAAc,CAAE,IAAI,CACrB",
+    "sources": [
+        "../sass copy/components copy/main/copy_backdrop.scss"
+    ],
+    "names": [],
+    "file": "copy_backdrop.min.css"
+}

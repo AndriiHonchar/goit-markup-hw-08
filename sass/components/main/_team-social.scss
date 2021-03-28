@@ -1,0 +1,28 @@
+.team-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.team-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $link-grey;
+  border-radius: 50%;
+  transition: color 250ms $cubic, background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $color-blue;
+  }
+}
+
+.team-social__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,45 @@
+// .header-button__close {
+//   display: none;
+// }
+
+// .header-button {
+//   border: none;
+//   background-color: transparent;
+//   margin-left: auto;
+
+//   &:hover,
+//   &:focus {
+//     fill: $color-blue;
+//   }
+
+//   &.is-open .header-button__close {
+//     display: block;
+//   }
+
+//   &.is-open .header-button__open {
+//     display: none;
+//   }
+// }
+.menu-toggle {
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  transition: fill 250ms $cubic;
+
+  &:hover &:focus {
+    fill: $link-blue;
+  }
+}
+
+.js-close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  transition: color 250ms $cubic;
+
+  &:hover {
+    color: $link-blue;
+  }
+}
