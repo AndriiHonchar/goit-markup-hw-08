@@ -1,0 +1,19 @@
+.container__nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__nav {
+    padding: 21px 15px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__nav {
+    padding: 24px 15px;
+    margin: 0 auto;
+  }
+}

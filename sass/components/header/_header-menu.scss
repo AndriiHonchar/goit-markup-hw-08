@@ -1,0 +1,41 @@
+.header-menu {
+  position: relative;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: $color-white;
+  padding: 48px 40px;
+
+  transform: translateY(-100%);
+}
+
+.header-menu.is-open {
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    position: static;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-left: 88px;
+
+    transform: rotateY(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-menu {
+    margin-left: 93px;
+    align-items: baseline;
+    width: 100%;
+  }
+}
